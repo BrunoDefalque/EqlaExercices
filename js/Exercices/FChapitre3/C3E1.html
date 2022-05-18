@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 1 : Vérification des heures</h2>
+    <p>
+        Votre programme demandera la partie "heure" de l'heure à l'utilisateur et stockera la réponse dans une variable
+        Ensuite, il demandera la partie "minute" de l'heure à l'utilisateur et stockera cette deuxième information dans une autre variable.
+        Après récolte de ces informations, le programme écrira l'heure et les minutes que l'utilisateur a défini. Si l'heure n'est pas correctement encodée 
+        (minutes supérieur à 59, heures supérieures à 24,...) alors le programme affichera plusieurs messages d'erreur du style "L'heure encodée est supérieur à 60" 
+        pour faire comprendre les problèmes.
+    </p>
+    <p>
+        Après ceci, quoi qu'il arrive, le programme souhaitera une bonne journée à l'utilisateur.
+    </p>
+    
+    <div class="navigation">
+        <p><a href="../FChapitre3/C3E2.html">Exercice Suivant</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let hourIndication = parseInt (prompt("Indiquer l'heure souhaitée"));
+	let minuteIndication = parseInt (prompt("Indiquer les minutes souhaitées"));
+
+	if (hourIndication <0) {
+	alert ("L'heure indiquée est négative, veuillez inscrire un nombre positif !!");
+}
+
+if (hourIndication >24) {
+	alert (" leur indiquer est supérieure à 24\nVeuillez sélectionner une heure entre 00 et 24 !!");
+}
+
+if (minuteIndication < 0) {
+	alert ("Les minutes indiquées sont négatives, veillez inscrire un nombre positif");
+}
+ if (minuteIndication > 59) {
+	alert (" les minutes indiquées sont supérieures à 59, veuillez sélectionner les minutes entre 00 et 59 !!");
+
+}
+
+else {
+	alert ("L'heure indiquée est " + hourIndication + "h" + minuteIndication + ". Passer une excellente journée…");
+}
+
+
+</script>
+</html>

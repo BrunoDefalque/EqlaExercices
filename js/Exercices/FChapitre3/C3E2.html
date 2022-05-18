@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 2 : Site de Chaton</h2>
+    <p>
+        Vous avez développé un site de chaton ! Malheureusement, les photos sur le site sont vraiment trop mignonnes, et les adultes ne peuvent pas les voir sous peine
+        de dommages cérébraux définitifs, votre mission est de protéger à tout pris ce site avec une sécurité optimale pour éviter la visite d'adulte !
+    </p>
+    <p>
+        Pour ce faire, vous demanderez à la personne qui visite le site de tapper la phrase "les chatons sont trop mignons pour moi". Si elle le fait correctement, l'accès au site sera
+        refusé, et si au contraire la personne rentre N'IMPORTE QUOI D'AUTRE, c'est la preuve que c'est un enfant, et il peut donc rentrer sur le site. 
+        L'entrée ou le refus d'entrée sur le site se manifestera par une petite phrase du style "vous pouvez entrer" ou "vous ne pouvez pas rentrer" et suivi par une redirection vers
+        la page google
+    </p>
+
+    <div class="navigation">
+        <p><a href="../FChapitre3/C3E1.html">Exercice Précédent</a></p>
+        <p><a href="../FChapitre3/C3E3.html">Exercice Suivant</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let stringVerify = prompt (" pour des raisons de sécurité, veux-tu bien écrire cette phrase ?\nLes chatons sont trop mignons pour moi");
+
+	if (stringVerify == "Les chatons sont trop mignons pour moi") {
+		alert (" vous êtes un adulte, dégager d'ici !");
+	}
+	else {
+		
+		alert ("Bienvenue sur le site des  chatons , voici le lien de l'album photo");
+
+		//alert ("<a href = 'https://www.google.be'>Super album des chatons</a>);
+
+		
+	}
+	
+
+</script>
+</html>

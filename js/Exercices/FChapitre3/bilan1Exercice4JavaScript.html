@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interrogation 1 Exercice 4</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Bilan 1</h2>
+    
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let ageUser = parseInt (prompt ("Quel âge avez-vous ?"));
+
+	function MinorCalcul (_ageUser) {
+
+		let _result = _ageUser - 18;
+		alert ("Vous avez " + _ageUser + " ans, vous serez adulte dans " + _result + " ans");
+	}
+
+	function MajorCalcul (_ageUser) {
+
+		let _result = _ageUser - 18;
+		alert ("Vous avez " + _ageUser + " ans, vous êtes adulte depuis " + _result + " ans");
+	}
+
+	if (ageUser < 18) {
+		MinorCalcul (ageUser);
+	}
+
+	else if (ageUser > 17) {
+		MajorCalcul (ageUser);
+	}
+
+	else {
+		alert (" vous devez indiquer un âge ! Veuillez recommencer");
+	}
+
+</script>
+</html>

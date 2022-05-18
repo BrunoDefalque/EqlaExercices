@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 3 : Séléction de sexe</h2>
+    <p>
+        Votre programme demande à l'utilisateur d'entrer un chiffre, ce chiffre représentera le sexe la personne (1:femme 2:homme 3:autre)
+    </p>
+    <p>
+        En fonction de l'entrée donnée, le programme donnera un résultat différent, le programme saluera la personne en prenant en compte son sexe, 
+        (Bonjour Madame/Bonjour Monsieur/Bonjour à vous)
+    </p>
+    
+    <div class="navigation">
+        <p><a href="../FChapitre3/C3E2.html">Exercice Précédent</a></p>
+        <p><a href="../FChapitre3/C3E4.html">Exercice Suivant</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let sexChoice = parseInt (prompt("Entrer le chiffre 1 si vous êtes une femme\n" +
+	"Entrer le chiffre 2 si vous êtes un homme\n" +
+	"Entrer le chiffre 3 si vous êtes autre"));
+
+	if (sexChoice == 1) {
+		alert ("Bonjour chère Madame");
+	}
+	else if (sexChoice == 2) {
+		alert ("Bonjour cher Monsieur");
+	}
+	else if (sexChoice == 3) {
+		alert ("Bonjour cher différent");
+	}
+		else {
+			alert ("Pour identifier votre sexe vous devez absolument marquer le chiffre 1, 2 ou 3!! veillez recommencer SVP");
+		}
+
+</script>
+</html>

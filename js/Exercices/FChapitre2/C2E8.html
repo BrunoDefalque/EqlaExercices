@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 8 : Conversion et TVA</h2>
+    <p>
+        La seule opération se faisant hors des fonction est l'appel de ShowResult(). Cette fonction
+        s'occupera exclusivement d'écrire à l'écran le résultat demandé.
+    </p>
+    <p>
+        Votre programme devra comme résultat afficher le prix entré par l'utilisateur sans taxe en euro, 
+        tugrik(monnaie mongole), et dollars.
+    </p>
+    <p>
+        Il devra aussi calculer et montrer le prix avec taxe dans les trois monnaie, et enfin le prix final après
+        application de la réduction (c'est une réduction brute pas en %. Si l'utilisateur rentre une réduction 
+        de 10 alors ça veut dire qu'on enlève 10 euros au prix final) 
+    </p>
+    <p>
+        <ul>
+            <li>
+                Conversion : 
+                <ul>
+                    <li>USA : 1,19</li>
+                    <li>MN : 3395</li>
+                </ul>
+            </li>
+            <li>
+                TVA :
+                <ul>
+                    <li>USA : 7,5%</li>
+                    <li>EU : 21%</li>
+                    <li>MN : 10%</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let priceHtva = parseInt (prompt ("Indiquer le montant en Euro Hors TVA"));
+
+	//let reduction = parseInt (prompt ("Entrer le montant en Euro de la réduction"));
+
+	function Conversion (_priceHtva) {
+		alert ("Prix hors taxes Euro = " + _priceHtva);
+		alert ("Prix hors taxes USA = " + _priceHtva * 1.1);
+		alert ("Prix hors taxes mongole = " + _priceHtva * 3395);
+
+		//return _priceHtva * 1.1;
+	}
+
+	//alert ("Prix hors taxes USA = " + Conversion (priceHtva));
+
+	Conversion (priceHtva);
+
+</script>
+</html>

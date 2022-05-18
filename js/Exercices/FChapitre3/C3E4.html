@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Exercice 4 : Horaire de train</h2>
+    <p>
+        Vous créez une petite application qui donne les horaires des trains. L'utilisateur choisira sa destination 
+        et la période à laquelle il veut partir et votre application donnera l'heure du train. Concrètement le 
+        résultat devra ressembler à ceci :
+    </p>
+    
+    <p>1 - Bruxelles
+    <br>2 - Mons
+    <br>3 - Nivelles
+    <br>4 - Charleroi
+    </p>
+
+    <p>Entrez La destination que vous voulez atteindre : 3
+    <br> Bien, vous avez choisi d'aller à Nivelles.</p>
+
+    <p>1 - Matin
+    <br>2 - Après-midi
+    <br>3 - Soir</p>
+
+    <p>Quand souhaitez vous partir ? 3</p>
+    <p>Ok, vous avez choisi la période : Soir</p>
+    <p>Votre train démarre à 20h00</p>
+    
+    <p>Les heures sont les suivantes :</p>
+    
+    <p>
+        <ul>
+            <li>Mons (Matin) : 9h10</li> 
+            <li>Mons (Midi) : 13h30</li> 
+            <li>Mons (Soir) : 22h56</li> 
+        </ul>
+        <ul>
+            <li>Bruxelles (Matin) : 10h33</li> 
+            <li>Bruxelles (Midi) : 14h42</li> 
+            <li>Bruxelles (Soir) : 19h02</li> 
+        </ul>
+        <ul>
+            <li>Nivelles (Matin) : 5h34</li> 
+            <li>Nivelles (Midi) : 15h13</li> 
+            <li>Nivelles (Soir) : 20h00</li> 
+        </ul>
+        <ul>
+            <li>Charleroi (Matin) : 7h45</li> 
+            <li>Charleroi (Midi) : 12h53</li> 
+            <li>Charleroi  (Soir) : 23h02</li> 
+        </ul>
+    </p>
+
+
+    
+    
+    <div class="navigation">
+        <p><a href="../FChapitre3/C3E3.html">Exercice Précédent</a></p>
+        <p><a href="../FChapitre3/C3E5.html">Exercice Suivant</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let choiceDestination = parseInt (prompt("Entrer la destination de votre choix\n" +
+	"1 Bruxelles\n" +
+	"2 Mons\n" +
+	"3 Nivelles\n" +
+	"4 Charleroi"));
+
+	switch (choiceDestination) {
+		case 1:
+		alert ("1 ok, vous avez décidé d'aller à Bruxelles");
+		break;
+
+		case 2:
+		alert ("2 ok, vous avez décidé d'aller à Mons");
+		break;
+
+		case 3:
+		alert ("3 ok, vous avez décidé d'aller à Nivelles");
+		break;
+		case 4:
+		alert ("4 ok, vous avez décidé d'aller à Charleroi");
+		break;
+		default:
+		alert (" vous n'avez pas encoder une bonne destination");
+	}
+
+</script>
+</html>

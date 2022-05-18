@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 1 - Exercice 1 : Hello World</h2>
+
+    <p>
+        A l'aide de la fonction alert() écrivez Hello World dans une boite de dialogue
+    </p>
+
+    <p><a href="../../Chapitre1.html">Retour au Chapitre 1</a></p>
+    <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+	
+
+ alert ("HELLO WORLD");
+
+ let prixHtva = parseInt (prompt("Indiquer le montant de l'article hors TVA"));
+ 
+ function PrixTvac (_prixHtva ) {
+	let prixTvac = _prixHtva * 1.21;
+	return prixTvac;
+}
+
+let montantTvac = PrixTvac (prixHtva);
+
+alert ("Un article qui vaut " + prixHtva + " € hors Tva coûtera " + montantTvac + " € Tva comprise de 21%");
+</script>
+</html>

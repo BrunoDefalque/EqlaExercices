@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 6 : Somme d'âges</h2>
+    <p>
+        Créez une fonction qui va avoir 2 paramètre. Ces deux paramètres sont des chiffres
+        représentant l'âge de deux personnes. Cette fonction écrira une petite phrase du style 
+        "l'age de la personne 1 est... l'âge de la personne deux est ..."
+    </p>
+    <p>
+        la deuxième utilité de cette fonction est de calculer la somme de ces âges. La fonction
+        renverra le résultat au programme principal qui lui devra afficher une phrase du style
+        "la somme des deux âges vaut ..."
+    </p>
+    
+    <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let ageUser1 = parseInt (prompt("Quel est l'âge de la première personne ?"));
+
+	let ageUser2 = parseInt (prompt ("Quel est l'âge de la deuxième personne ?"));
+
+	function CalculateAge (_ageUser1, _ageUser2) {
+		alert ("La première personne a " + _ageUser1 + " ans.\n" +
+		"La deuxième personne a " + _ageUser2 + " ans.");
+
+		let result = _ageUser1 + _ageUser2;
+
+		return result;
+
+		//return _ageUser1 + _ageUser2;
+	}
+
+	//CalculateAge (ageUser1, ageUser2);
+
+	alert ("La somme des âges vaut : " + CalculateAge (ageUser1, ageUser2));
+
+</script>
+</html>

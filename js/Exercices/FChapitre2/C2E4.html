@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Exercice 4 : Détection de chômeur</h2>
+    <p>
+        Créez une fonction qui a deux paramètre, l'age et le travail d'une personne. A l'appel
+        de la fonction, celle-ci met un petit texte disant l'âge, le profession de la personne et la 
+        félicitant pour son travail.
+    </p>
+    <p>
+        Essayez d'appeler la fonction 2 fois. La première fois, donnez un âge et une profession. la deuxième fois, ne donnez que l'âge.
+    </p>
+    <p>
+        Lors du deuxième appel, bien que vous n'ayez donné que l'âge, la fonction ne doit pas planter et simplement à la place du nom du travail, doit d'elle même écrire "Sans emploi".
+    </p>
+
+
+    
+    <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+    <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Votre résolution ici :
+
+	let age = prompt ("Quel est votre âge ?");
+	let work = prompt ("Quel est votre profession ?");
+	
+	function WorkDetection (_age, _work = "Sans emploi") {
+		alert ("Bonjour visiteur, vous avez " + _age + " ans.\n" +
+		"Vous êtes " + _work + ".");
+	}
+
+	WorkDetection(age, work);
+	WorkDetection(age);
+
+</script>
+</html>
